@@ -56,7 +56,8 @@ while (movimentandoEstoque)
 
 }
 
-Console.WriteLine("==================== Calculadora de Juros ====================");
+Console.WriteLine("\n==================== Calculadora de Juros ====================");
+
 
 Console.WriteLine("\nDigite o valor: ");
 decimal valor = decimal.Parse(Console.ReadLine()!, CultureInfo.GetCultureInfo("pt-BR"));
@@ -73,3 +74,4 @@ decimal valorJuros = valor * 0.025m * diasAtraso;
 Console.WriteLine($"Dias de atraso: {diasAtraso}");
 Console.WriteLine($"Valor dos juros: {valorJuros.ToString("C", CultureInfo.GetCultureInfo("pt-BR"))}");
 Console.WriteLine($"Valor total: {(valor + valorJuros).ToString("C", CultureInfo.GetCultureInfo("pt-BR"))}");
+Console.WriteLine("\n==============================================================");
